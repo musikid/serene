@@ -102,6 +102,16 @@
         {%- if show_comment and config.extra.comment == "disqus_js" %}
         <div id="disqus_thread" class="comment"></div>
         {%- endif %}
+
+        {%- if show_comment and config.extra.comment == "utterances" %}
+          <script src="https://utteranc.es/client.js"
+                  repo="{{ config.extra.utterances.repo }}"
+                  issue-term="{{ config.extra.utterances.issue_term }}"
+                  theme="{{ config.extra.utterances.theme }}"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+        {%- endif %}
     </main>
     <aside {% if config.extra.blur_effect %} class="blur" {% endif %}>
         {%- if page.extra.toc is defined %} {% set show_toc = page.extra.toc %}

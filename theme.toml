@@ -102,3 +102,7 @@ src = "https://xxxxxxxxxxx/umami.js"
 
 [extra.baidu_tongji]
 token = "xxxxxxxx"
+
+[extra.utterances]
+issue_term = "url"
+theme = "github-dark"

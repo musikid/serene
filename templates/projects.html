@@ -35,7 +35,9 @@
     {% for proj in data.project -%}
     <div class="proj">
         <div class="image">
+          {% if proj.img %}
           <img src="{{ proj.img }}" alt="{{ proj.name }}" />
+          {% endif %}
         </div>
         <div class="meta">
           <p class="name">{{ proj.name }}</p>

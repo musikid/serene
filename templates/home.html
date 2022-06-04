@@ -16,7 +16,6 @@
 {% block content %}
 <main>
     <div class="info">
-        <img src="{{ config.extra.avatar }}" alt="avatar">
         <div class="info-text">
             <p>
                 <span id="name">{{ config.extra.name }}</span>
@@ -37,6 +36,10 @@
             <a href="/projects" id="projects">
                 <i class="{{ config.extra.projects_icon }} ri-xl"></i>
                 <span>Projects</span>
+            </a>
+            <a href="/resume.pdf" id="projects">
+                <i class="{{ config.extra.resume_icon }} ri-xl"></i>
+                <span>Resume</span>
             </a>
             {% endif -%}
         </div>

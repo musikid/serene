@@ -26,6 +26,7 @@ projects_icon = "ri-compasses-2-line"
 home_icon = "ri-user-6-line"
 rss_icon = "ri-rss-line"
 toc_icon = "ri-menu-2-line"
+resume_icon = "ri-briefcase-line"
 
 #=========================================================================================
 links = [

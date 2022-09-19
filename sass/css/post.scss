@@ -87,6 +87,14 @@ article {
     a {
         color: var(--primary-color);
         text-decoration: underline var(--primary-light-color) 2px;
+        &.anchor {
+            color: inherit;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
         &:hover {
             text-decoration-color: var(--primary-color);
         }

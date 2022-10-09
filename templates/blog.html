@@ -27,7 +27,7 @@
         </a>
         {% endfor -%}
         {% if section.pages | length > section.extra.show_post_num -%}
-        <div class="posts-{{category}} hidden">
+        <div class="posts hidden">
             {% for post in posts | slice(start=section.extra.show_post_num) -%}
             <a class="post" href="{{ post.permalink }}">
                 <span>{{ post.title }}</span>
@@ -35,7 +35,7 @@
             </a>
             {% endfor -%}
         </div>
-        <div class="showhidden"><button data-category="{{category}}">More<i class="ri-arrow-down-s-line ri-lg"></i></button></div>
+        <div class="showhidden"><button>More<i class="ri-arrow-down-s-line ri-lg"></i></button></div>
         {% endif -%}
     </div>
     <h2>Series</h2>

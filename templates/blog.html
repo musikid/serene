@@ -21,10 +21,12 @@
 <main>
     <div class="post-list">
         {% for post in section.pages | slice(end=section.extra.show_post_num) -%}
-        <a class="post" href="{{ post.permalink }}">
-            <span>{{ post.title }}</span>
-            <span class="date">{{ post.date | date }}</span>
-        </a>
+            {% if post.extra.series_only is undefined %}
+                <a class="post" href="{{ post.permalink }}">
+                    <span>{{ post.title }}</span>
+                    <span class="date">{{ post.date | date }}</span>
+                </a>
+            {% endif %}
         {% endfor -%}
         {% if section.pages | length > section.extra.show_post_num -%}
         <div class="posts hidden">
